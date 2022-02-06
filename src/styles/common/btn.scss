@@ -1,0 +1,45 @@
+@import "../mixins/mixins";
+@import "../utils/variables";
+
+
+.btn {
+  outline-style: none;
+  border: 1px solid $red;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: $red;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.1;
+  min-height: 38px;
+  padding: 9px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0 15px 20px rgba(184, 10, 10, 0.2);
+
+  &--left-24 {
+    margin-left: 24px;
+  }
+
+  &--dark {
+    background-color: transparent;
+    color: $red;
+    box-shadow: unset;
+  }
+
+  &--white {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: $red;
+    box-shadow: unset;
+  }
+
+  &--mob-hidden {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

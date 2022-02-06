@@ -1,15 +1,40 @@
 @import "../mixins/mixins";
+@import "../utils/variables";
 
 .header {
-  padding-top: 21px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: $dark;
+
+  @media (max-width: 991px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: 767px) {
+    background-color: transparent;
+    margin-bottom: -68px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .header__container {
-
   @include container;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__btn-wrap {
+  align-self: center;
+}
+
+.header__logo-icon {
+  @media (max-width: 991px) {
+    max-width: 75px;
+    width: 100%;
+    height: auto;
+  }
 }

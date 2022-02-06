@@ -1,0 +1,89 @@
+@import "../mixins/mixins";
+@import "../utils/variables";
+
+.program-benefits {
+  display: block;
+  padding-top: 72px;
+  padding-bottom: 88px;
+  background: linear-gradient(180deg, #ededed 0%, rgba(237, 237, 237, 0) 105.15%);
+
+  @media (max-width: 991px) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 44px;
+    padding-bottom: 22px;
+  }
+}
+
+.program-benefits__container {
+  @include container;
+}
+
+.program-benefits__flex {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 991px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.program-benefits__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 150px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    max-width: 33%;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 50%;
+  }
+}
+
+.program-benefits__icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  background-color: $red;
+  border-radius: 50%;
+  box-shadow: 0 15px 20px rgba(184, 10, 10, 0.2);
+  margin-bottom: 16px;
+
+  @media (max-width: 991px) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.program-benefits__icon {
+  @media (max-width: 991px) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.program-benefits__item-text {
+  margin-top: unset;
+  margin-bottom: 38px;
+  text-align: center;
+  font-weight: 500;
+
+  @media (max-width: 991px) {
+    font-size: 15px;
+    max-width: 130px;
+  }
+}

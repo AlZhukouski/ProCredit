@@ -1,37 +1,9 @@
 @import "../utils/variables";
 
-@mixin media-tablet {
-
-  @media (min-width: $mediaWidthTablet) {
-    @content;
-  }
-}
-
-@mixin media-tablet-horizontal {
-
-  @media (min-width: $mediaWidthTabletHorizontal) {
-    @content;
-  }
-}
-
-@mixin media-laptop {
-
-  @media (min-width: $mediaWidthLaptop) {
-    @content;
-  }
-}
-
-@mixin media-custom($width) {
-
-  @media (min-width: $width) {
-    @content;
-  }
-}
-
 @mixin container {
   width: 100%;
-  max-width: 1180px;
-  padding: 0 20px;
+  max-width: 1184px;
+  padding: 0 24px;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;

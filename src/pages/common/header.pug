@@ -1,7 +1,6 @@
 header.header
   .header__container
-    a(href="/").header__logo
-      img(src="img/logo.png", width="94", height="45", alt="Logotype").header__logo-icon
+    img(src="img/logo.png", width="94", height="45", alt="Logotype").header__logo-icon
     .header__btn-wrap
-      a(href="/").header__btn.btn.btn--dark Регистрация
-      a(href="/").header__btn.btn Войти
+      a.header__btn.btn.btn--mob-hidden(href="/registration.html") Регистрация
+      a.header__btn.btn.btn--dark.btn--left-24(href="/log-in.html") Войти
